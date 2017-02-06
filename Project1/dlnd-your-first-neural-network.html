@@ -13384,8 +13384,7 @@ height=263
         <span class="c1">### Backward pass ###</span>
         
         <span class="c1"># TODO: Output error</span>
-        <span class="n">output_errors</span> <span class="o">=</span> <span class="n">targets</span> <span class="o">-</span> <span class="n">final_outputs</span> <span class="c1"># Output layer error is the difference between desired target </span>
-                                                <span class="c1"># and actual output.</span>
+        <span class="n">output_errors</span> <span class="o">=</span> <span class="n">targets</span> <span class="o">-</span> <span class="n">final_outputs</span> <span class="c1"># Output layer error is the difference between desired target and actual output.</span>
         
         <span class="c1"># TODO: Backpropagated error</span>
         <span class="n">hidden_errors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">weights_hidden_to_output</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">output_errors</span><span class="p">)</span> <span class="c1"># errors propagated to the hidden layer</span>
@@ -16811,7 +16810,7 @@ height=272
 <blockquote><p><strong>Note:</strong> You can edit the text in this cell by double clicking on it. When you want to render the text, press control + enter</p>
 </blockquote>
 <h4 id="Your-answer-below">Your answer below<a class="anchor-link" href="#Your-answer-below">&#182;</a></h4><p>As seen from the figure, the predictions accurate are within +3, -1 of the total actual rides over the period between 2012-12-10 and 2012-12-31 (the test data).</p>
-<p>It is clear that the model starts to fail around the interval Dec 22 -- Dec 31. The reason is that the training data encompasses the period between 2011-01-01 to 2012-10-10 and excludes the holiday season. It is expected that during the holiday season rides would decrease. However, the training data has no information about this effect and basically overestimated the amount of rides.</p>
+<p>It is clear that the model starts to fail around the interval Dec 22 -- Dec 31. The reason is that the training data encompasses the period between 2011-01-01 to 2012-10-10 and excludes the holiday season. It is expected that during the holiday season rides would decrease. However, the training data has no information about this effect and basically overestimates the amount of rides.</p>
 
 </div>
 </div>
