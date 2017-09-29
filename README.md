@@ -7,3 +7,5 @@
 3. project 3: TV Script generation 
 4. project 4: Language translation
 5. project 5: Face generation
+
+Full repository for the class is located [here](https://github.com/udacity/deep-learning)
